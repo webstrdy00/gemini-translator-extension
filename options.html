@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gemini 번역기 옵션</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        width: 400px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 95%;
+        padding: 8px;
+        margin-bottom: 15px;
+      }
+      button {
+        padding: 10px 15px;
+      }
+      #status {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gemini 번역기 옵션</h1>
+    <p>
+      Google AI Studio 또는 Google Cloud Console에서 발급받은 Gemini API 키를
+      입력하세요.
+    </p>
+    <label for="apiKey">Gemini API 키:</label>
+    <input type="text" id="apiKey" placeholder="AIzaSy..." />
+    <button id="saveButton">저장</button>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
